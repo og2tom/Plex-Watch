@@ -1,0 +1,19 @@
+[Unit]
+Description=PlexWatch - Plex Library Monitor
+After=network.target
+
+[Service]
+Type=simple
+# Update this path to match where you installed plexwatch.py
+ExecStart=/usr/bin/python3 /opt/plexwatch/plexwatch.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Optional: Run as a specific user instead of root
+# User=plexuser
+# Group=plexuser
+
+[Install]
+WantedBy=multi-user.target

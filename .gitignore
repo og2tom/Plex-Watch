@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# State files
+/tmp/plexwatch_state.json
+plexwatch_state.json
+
+# System
+.DS_Store
+Thumbs.db
+
+# Configuration (if you want to keep a local config)
+config.local.py
+plexwatch.local.py
